@@ -79,6 +79,11 @@ async function getUserFromCode(code: string) {
     grant_type: "authorization_code",
   };
 
+  console.log('client id', env.clientid);
+  console.log('client secret', env.clientsecret);
+  console.log('redirect url', env.redirect_url);
+  console.log(code);
+
   try {
     const res = await axios.post(url, qs.stringify(values), {
       headers: {

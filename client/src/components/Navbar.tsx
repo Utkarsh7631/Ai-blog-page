@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import {
   carrotIcon,
-  mediumLogo,
+  AiBlogPageLogo,
   NotificationIcon,
   writeBlogIcon,
 } from "../assets/icons";
@@ -37,7 +37,7 @@ export default function Navbar({
           gap: "17px",
         }}
       >
-        <Link to="/">{mediumLogo}</Link>
+        <Link to="/">{AiBlogPageLogo}</Link>
         <Search />
       </div>
       <div

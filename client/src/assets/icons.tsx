@@ -1,4 +1,4 @@
-export const mediumLogo = (
+export const AiBlogPageLogo = (
   <svg
     version="1.0"
     width="42px"

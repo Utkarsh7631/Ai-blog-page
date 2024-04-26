@@ -115,8 +115,8 @@ export default function SignInBox({ message, typeOfLogin }: SignInBoxType) {
           marginTop: "22px",
         }}
       >
-        Click “{typeOfLogin}” to agree to Medium’s Terms of Service and
-        acknowledge that Medium’s Privacy Policy applies to you.
+        Click “{typeOfLogin}” to agree to Ai Blog Page’s Terms of Service and
+        acknowledge that Ai Blog Page’s Privacy Policy applies to you.
       </p>
     </div>
   );

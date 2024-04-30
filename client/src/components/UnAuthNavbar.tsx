@@ -45,6 +45,16 @@ export default function UnAuthNavbar() {
           height: "100%",
         }}
       >
+         <Link
+          to="/about"
+          style={{
+            color: "gray",
+            gap: "8px",
+            textDecoration: "none",
+          }}
+        >
+          About us
+        </Link>
         <Link
           to="/signin/write"
           className="writeBtn"

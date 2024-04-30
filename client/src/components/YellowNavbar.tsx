@@ -36,6 +36,15 @@ export default function YellowNavbar() {
           }}
         >
           <Link
+            to="/about"
+            style={{
+              color: "black",
+              textDecoration: "none",
+            }}
+          >
+            About us
+          </Link>
+          <Link
             to="/signin/write"
             className="writeBtn"
             style={{

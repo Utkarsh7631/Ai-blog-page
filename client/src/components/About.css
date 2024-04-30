@@ -1,0 +1,136 @@
+/* About.css */
+
+.about-section {
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: #000000;
+}
+
+.creators {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  margin-top: 20px;
+}
+
+.creator {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition for background-color */
+  cursor: pointer;
+}
+
+.creator:hover {
+  background-color:#ffc017; 
+  color: #e92b2b;
+}
+
+.creator img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.creator:hover img {
+  transform: rotateY(180deg);
+}
+
+.creator-details {
+  backface-visibility: hidden;
+}
+
+.creator-details:hover {
+  background-color: #dea70e; /* Change background color on hover */
+}
+
+.creator-details h4 {
+  margin: 0;
+}
+
+.creator-details p {
+  color: #000000;
+}
+
+.creator-details:hover p {
+  color: #ffffff; /* Change text color on hover */
+}
+
+.creator-details p:first-of-type {
+  margin-top: 10px;
+}
+
+.creator-details:hover a {
+  color: #ffffff; /* Change link color on hover */
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.social-links:hover a {
+  color: #fafafa;
+}
+.social-links a:hover {
+  color: #e92b2b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.about-section h2,
+.about-section h3,
+.about-section p {
+  animation: fadeIn 1s ease;
+}
+
+.about-section .creators {
+  animation: slideInFromTop 1s ease;
+}
+
+.about-section .social-links {
+  animation: slideInFromBottom 1s ease;
+}
